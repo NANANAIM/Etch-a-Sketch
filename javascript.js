@@ -2,6 +2,17 @@ const gridContainer = document.getElementById('grid-container');
 const gridSizeInput = document.getElementById('grid-size');
 const gridSizeValue = document.getElementById('grid-size-value');
 
+// función para un color uniforme
+let currentColor = '#000000';
+const colorPicker = document.getElementById('color-picker');
+colorPicker.oninput = (e) => currentColor = e.target.value;
+
+function handleCellHover(e) {
+  e.target.style.backgroundColor = currentColor;
+}
+
+//funcion para quitar el grid
+
 function crearGrid(size) {
   // Limpiar el grid anterior
   gridContainer.innerHTML = '';
@@ -12,6 +23,7 @@ function crearGrid(size) {
   for (let i = 0; i < size * size; i++) {
     const celda = document.createElement('div');
     celda.classList.add('container-celda');
+    celda.addEventListener('mouseover', handleCellHover);
     gridContainer.appendChild(celda);
   }
 }

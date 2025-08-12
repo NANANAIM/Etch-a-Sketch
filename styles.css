@@ -48,3 +48,8 @@ body{
     background: #eee;
     border: 1px solid #ccc;
 }
+
+#color-mode{
+    display: flex;
+    align-items: center;
+}
