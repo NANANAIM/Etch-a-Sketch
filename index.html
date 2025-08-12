@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900" rel="stylesheet">
+    </head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="main">
+        <div class="editores">
+            <input type="range" id="grid-size" min="16" max="32" value="16">
+            <span id="grid-size-value">16 x 16</span>
+            <button id="color-mode">Color uniforme</button>
+            <input type="color" id="color-picker" value="#000000">
+            <button id="rainbow-mode">Arcoíris</button>
+            <button id="shade-mode">Degradado</button>
+            <button id="eraser-mode">Borrador</button>
+            <button id="toggle-grid">Quitar Grid</button>
+        </div>
+    
+    <div id="grid-container">
+    </div>
+
+    </div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
