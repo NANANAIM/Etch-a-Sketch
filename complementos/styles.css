@@ -2,10 +2,17 @@ h1 {
     font-size: 58px;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-top: 10px;
     font-family: 'Bitcount Prop Double', sans-serif;
     color:rgb(255, 255, 255);
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
 }
 
 body{
@@ -22,6 +29,7 @@ body{
 .main{
     display: flex;
     align-items: center;
+    padding-right: 40px;
 }
 
 .editores{
@@ -61,3 +69,11 @@ body{
   background: #EEEEEE;
   border: 2px solid #333;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
