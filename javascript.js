@@ -1,3 +1,18 @@
+// Alternar el borde de los cuadros (grid) al pulsar el botón
+let gridVisible = true;
+const toggleGridBtn = document.getElementById('toggle-grid');
+toggleGridBtn.addEventListener('click', toggleGrid);
+
+//////////////
+
+/////////////
+
+function toggleGrid() {
+  gridVisible = !gridVisible;
+  document.querySelectorAll('.container-celda').forEach(celda => {
+    celda.style.border = gridVisible ? '1px solid #ccc' : '0';
+  });
+}
 const gridContainer = document.getElementById('grid-container');
 const gridSizeInput = document.getElementById('grid-size');
 const gridSizeValue = document.getElementById('grid-size-value');
@@ -7,11 +22,27 @@ let currentColor = '#000000';
 const colorPicker = document.getElementById('color-picker');
 colorPicker.oninput = (e) => currentColor = e.target.value;
 
+
+//funcion para borrador
+let eraserMode = false;
+const eraserBtn = document.getElementById('eraser-mode');
+
+eraserBtn.addEventListener('click', () => {
+  eraserMode = !eraserMode;
+  eraserBtn.classList.toggle('active', eraserMode);
+});
+
 function handleCellHover(e) {
-  e.target.style.backgroundColor = currentColor;
+  if (eraserMode) {
+    e.target.style.backgroundColor = '#EEEEEE';
+  } else {
+    e.target.style.backgroundColor = currentColor;
+  }
 }
 
-//funcion para quitar el grid
+//funcion para arcoiris
+let 
+
 
 function crearGrid(size) {
   // Limpiar el grid anterior
@@ -37,3 +68,4 @@ gridSizeInput.addEventListener('input', function() {
   gridSizeValue.textContent = `${size} x ${size}`;
   crearGrid(size);
 });
+
