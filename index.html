@@ -6,13 +6,16 @@
         <title>Etch-a-Sketch</title>
         <link rel="stylesheet" href="complementos/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900" rel="stylesheet">
+        
     </head>
 <body>
     <h1>Etch-a-Sketch</h1>
     <div class="main">
         <div class="editores">
-            <input type="range" id="grid-size" min="16" max="32" value="16">
-            <span id="grid-size-value">16 x 16</span>
+            <div class="barra">
+                <input type="range" id="grid-size" min="16" max="32" value="16">
+                <span id="grid-size-value">16 x 16</span>
+            </div>
             <button id="color-mode">Color uniforme
                 <input type="color" id="color-picker" value="#000000">
             </button>
@@ -23,9 +26,9 @@
         </div>
         <div id="grid-container"></div>
     </div>
-    
+
 <div class="footer">
-    <p>2025 Etch-a-Sketch. Hecho por NANANAIM</p> 
+    <p>©2025 Etch-a-Sketch. Hecho por NANANAIM</p> 
     <a href="https://github.com/NANANAIM" target="_blank">
         <img src="complementos/githublogo.png" class="github-logo" alt="GitHub" width="30px" height="30px">
     </a>

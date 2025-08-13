@@ -30,13 +30,36 @@ body{
     display: flex;
     align-items: center;
     padding-right: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#color-picker {
+    margin-left: 5px;
 }
 
 .editores{
+    font-family: 'Bitcount Grid Single', sans-serif;
     display: flex;
+    gap: 4px;
     flex-direction: column;
     align-items: center;
     margin: 10px;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    background-color: #ffffff64;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    width: 130px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #grid-container {
@@ -75,5 +98,9 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 3px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
+.github-logo {
+    margin-left: 3px;
+}

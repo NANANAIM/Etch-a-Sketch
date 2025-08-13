@@ -3,10 +3,6 @@ let gridVisible = true; // Variable para saber si el grid (bordes) está visible
 const toggleGridBtn = document.getElementById('toggle-grid'); // Referencia al botón para alternar el grid
 toggleGridBtn.addEventListener('click', toggleGrid); // Al hacer clic en el botón, ejecuta la función toggleGrid
 
-//////////////
-// (Espacio vacío, puedes eliminarlo)
-/////////////
-
 function toggleGrid() {
   gridVisible = !gridVisible; // Cambia el estado de gridVisible (true/false)
   document.querySelectorAll('.container-celda').forEach(celda => {
